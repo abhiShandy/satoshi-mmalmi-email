@@ -1168,3 +1168,103 @@ to build.
 I reduced the EXE size by running strip.exe on it to take out the debug 
 symbols.  That's with mingw.  That's the better compiler, I only used VC 
   for debugging.
+
+# several emails later
+
+# Email #249
+Date: Mon, 13 Dec 2010 16:11:53 +0000
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Subject: [bitcoin-list] Bitcoin 0.3.19 is released
+To: bitcoin-list@lists.sourceforge.net
+This is a minor release to add some DoS protection.
+
+Changes:
+- Added some DoS limits, though it's still far from DoS resistant.
+- Removed "safe mode" alerts.
+
+http://www.bitcoin.org/smf/index.php?topic=2228.0
+
+Download:
+http://sourceforge.net/projects/bitcoin/files/Bitcoin/bitcoin-0.3.19/
+
+# Email #251
+Date: Mon, 20 Dec 2010 18:10:06 +0000
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Subject: Re: Bitcoin.org backups
+To: Gavin Andresen <gavinandresen@gmail.com>
+Cc: mmalmi@cc.hut.fi
+Gavin Andresen wrote:
+> On Mon, Dec 20, 2010 at 10:55 AM,  <mmalmi@cc.hut.fi> wrote:
+>> ShadowOfHarbringer described a way of mirroring the bitcoin.org website and
+>> forum here:
+>> http://www.bitcoin.org/smf/index.php?topic=2026.msg30043#msg30043
+>>
+>> Should we go by it and trust the database along with its password hashes to
+>> some reliable community members who have servers?
+> 
+> That seems like asking for trouble, and I think it would violate the
+> implicit trust of everybody who's registered for the forums.
+
+I agree, don't let the database out of your hands.  There's private PM 
+in there, e-mail addresses, passwords.
+
+BTW, password hashes = passwords.  It's easy to break the hash of short 
+passwords people use on forums.
+6 chars = 3 difficulty
+7 chars = 410 difficulty
+8 chars = 25418 difficulty
+
+
+>> Another option is to
+>> > encrypt the backups with pgp and store them in multiple places.
+> 
+> That seems wiser.  Daily backups copied ... somewhere ... seems like
+> the right thing to do.  If they're reasonably small (less than a
+> gigabyte), I'd be happy to pay for Amazon S3 storage/bandwidth for
+> them.
+
++1
+
+Even with encryption, a trusted storage place is better.
+
+# Email #254
+Date: Thu, 06 Jan 2011 18:31:26 +0000
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Subject: Re: Writing about BitCoin
+To: Gavin Andresen <gavinandresen@gmail.com>
+Cc: Martti Malmi <mmalmi@cc.hut.fi>
+Gavin Andresen wrote:
+> I'd be happy to talk to Rainey; 
+
+Great
+
+> Satoshi, I assume you don't want to
+> deal with press/PR/interviews ?
+
+True
+
+> We could decline to talk to the press-- Satoshi, I know you've
+> expressed concern about bitcoin growing too big too fast, and being
+> unable to keep up with traffic/attacks/feature requests/etc.  But I
+> don't think ignoring the press will make them go away; they'll just
+> talk to somebody else.  I think it is better to give a realistic
+> impression of bitcoin (it is cutting-edge, beta software that is still
+> being developed, it is not poised to replace PayPal or the Euro
+> anytime soon, etc) rather than let somebody over-enthusiastic become
+> "the unofficial bitcoin spokesperson."
+
+You're the best person to do it.
+
+EFF is really important.  We want to have a good relationship with them. 
+  We're the type of project they like; they've helped the TOR project 
+and done a lot to protect P2P file sharing.
+
+# Email #256
+Date: Tue, 25 Jan 2011 18:34:03 +0000
+From: Satoshi Nakamoto <satoshin@gmx.com>
+Subject: Re: Fwd: Bitcoin question
+To: mmalmi@cc.hut.fi
+The paper was published in 2008.
+
+Someone needs to correct Wikipedia; it incorrectly says the paper was 
+published in 2009.  The paper was released earlier than the software.
